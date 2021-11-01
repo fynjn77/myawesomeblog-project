@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Post details</title>
+</head>
+<body>
+<h1>Test</h1>
+<hr>
+<h2>{{ post.post_headline }}</h2>
+<img src="{{ post.post_image.url }}" alt="" height="300" width="auto">
+<p>{{ post.post_text }}</p>
+<img src="{% static '/cat.jpg' %}" alt="static image" style = "width: 300px; height: auto")>
+
+</body>
+</html>
